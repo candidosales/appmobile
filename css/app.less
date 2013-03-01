@@ -1,0 +1,62 @@
+@import "dss.less";
+@import "font.css";
+
+body,h1,p, span, a, * {font-family: 'Bitter', serif;}
+[data-role="page"]{background:url(../images/back-mobile-2.jpg);}
+.ui-icon{
+	color:#000;
+}
+.item-cardapio{
+	h1{
+		text-align: center;
+	}
+	img{
+		width:100%;.rounded(10px);
+	}
+}
+.menu-principal{
+	ul{list-style: none; padding:0 10%;
+		li{padding: 5%;
+			height:90px;width: 90px;
+			.rounded(10px);
+			.gradient-v(#e7a21e,#d86c2a);
+			float:left;
+			text-align: center;
+			margin: 4% 0;
+			.box-shadow-init(0 8px 6px -6px #000);
+			border:2px solid #d56c2a;
+			&.left{
+				float: left;
+			}
+			&.right{
+				float: right;
+			}
+			a{text-decoration: none;
+				p{
+					font-size: 1.0em;
+					font-weight: bold;
+					margin:0;
+					line-height: 1.0em;
+					color: #000;
+				}
+				.icon{
+					font-size: 3em;
+					color: #c40303;
+					text-align: center;
+					margin-bottom: 2%;
+				}
+			}
+			&:hover {
+				.gradient-v(#d86c2a,#d86c2a);
+			}
+			&:active {
+				.gradient-v(#d86c2a,#e7a21e);
+			}
+		}
+
+	}
+}
+
+.ui-body-c, .ui-overlay-c{
+	text-shadow: 0 1px 0 #EF9E67;
+}
