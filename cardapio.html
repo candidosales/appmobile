@@ -1,5 +1,5 @@
 	<div data-role="page" id="menu">
-		<div data-role="header">
+		<div data-role="header" data-position="fixed" data-tap-toggle="true">
 			<a href="menu-principal.html" data-role="button" data-icon="back" data-theme="e" data-iconpos="left" data-inline="true">Voltar</a>
 
 			<h1>Cardápio</h1>
@@ -7,7 +7,7 @@
 		</div>
 
 		<div data-role="content">
-			<ul data-role="listview">
+			<ul data-role="listview" data-filter="true" data-filter-placeholder="Buscar...">
 				<li>
 					<a href="cardapio-tradicional.html" data-transition="slide">
 						<img src="images/download.png">
